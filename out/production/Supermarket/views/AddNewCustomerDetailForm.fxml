@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addNewCustomerAnchorPaneContext" prefHeight="534.0" prefWidth="440.0" style="-fx-background-color: white;" stylesheets="@../assets/style/StyleForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewCustomerDetailFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="110.0" layoutY="14.0" prefHeight="27.0" prefWidth="224.0" text="Add New Customer Form" textFill="#139dbf">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="91.0" layoutY="39.0" prefHeight="4.0" prefWidth="262.0" />
+      <JFXButton buttonType="RAISED" layoutX="165.0" layoutY="480.0" onAction="#saveCustomerOnAction" prefHeight="32.0" prefWidth="111.0" style="-fx-background-color: #2c3e50;" text="Save Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <VBox layoutX="7.0" layoutY="50.0" onKeyReleased="#OneAction" prefHeight="213.0" prefWidth="429.0">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtCustomerId" disable="true" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="C-001" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Customer ID" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtCustName" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Padeepa Chamika" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Customer Name" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtCity" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Ambalangoda" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="City" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtPostalCode" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="00000" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Postal Code" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox layoutX="7.0" layoutY="280.0" onKeyReleased="#onActionTwo" prefHeight="200.0" prefWidth="429.0">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtCustomerTitle" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Title" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Customer Title" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtAddress" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Galle" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Address" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtProvince" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Galle" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Province" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

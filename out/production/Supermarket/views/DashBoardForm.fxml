@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginHomeAnchorPaneContext" prefHeight="574.0" prefWidth="1082.0" style="-fx-background-color: #18dcff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="574.0" fitWidth="1082.0" opacity="0.6" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/grocery-store-color-illustration-variety-foods-goods-shelves-shop-trolley-cart-with-veggies-fruits-inside-supermarket-cartoon-interior-with-decor-background_151150-2381.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="280.0" layoutY="69.0" text="Nihal Supermarket" textFill="#030039">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="57.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="loginAnchorPaneContext" layoutX="402.0" layoutY="160.0" opacity="0.91" prefHeight="342.0" prefWidth="279.0" style="-fx-background-color: #67e6dc;">
+         <children>
+            <Label layoutX="37.0" layoutY="154.0" text="User Name :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserName" layoutX="130.0" layoutY="152.0" onAction="#moveToPassword" prefHeight="25.0" prefWidth="139.0" />
+            <Label layoutX="47.0" layoutY="197.0" text="Password :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="104.0" layoutY="269.0" onAction="#openHomePage" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #4b6584;" text="Login">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <PasswordField fx:id="txtPassword" layoutX="130.0" layoutY="195.0" prefHeight="25.0" prefWidth="139.0" />
+            <ImageView fitHeight="118.0" fitWidth="127.0" layoutX="81.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblDate" layoutX="735.0" layoutY="164.0" prefHeight="40.0" prefWidth="176.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="914.0" layoutY="164.0" prefHeight="40.0" prefWidth="165.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

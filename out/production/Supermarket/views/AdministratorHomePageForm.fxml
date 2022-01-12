@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="574.0" prefWidth="1082.0" style="-fx-background-color: #18dcff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdministratorHomePageFormController">
+   <children>
+      <ImageView fitHeight="574.0" fitWidth="1082.0" opacity="0.6" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/grocery-store-color-illustration-variety-foods-goods-shelves-shop-trolley-cart-with-veggies-fruits-inside-supermarket-cartoon-interior-with-decor-background_151150-2381.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="324.0" layoutY="14.0" text="Administrator Home Page" underline="true">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="36.0" />
+         </font></Label>
+      <JFXButton buttonType="RAISED" layoutX="90.0" layoutY="246.0" onAction="#openRegisterNewItem" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: #55efc4;" text="Register New Item">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="312.0" layoutY="377.0" onAction="#modifyItemDetailsOnAction" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: #55efc4;" text="Modify item Details">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="582.0" layoutY="246.0" onAction="#removeItemOnAction" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: #55efc4;" text="Remove Items">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="37.0" layoutY="514.0" onAction="#backToHome" prefHeight="34.0" prefWidth="82.0" style="-fx-background-color: #636e72;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="809.0" layoutY="377.0" onAction="#openIncomeReport" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: #55efc4;" text="Income Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="155.0" layoutX="89.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/1053562-200.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="155.0" layoutX="313.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon-edit-0.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="155.0" layoutX="580.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/1019354-200.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="155.0" layoutX="807.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/income-icon-21.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

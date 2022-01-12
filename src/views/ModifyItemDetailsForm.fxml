@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="modifyItemAnchorPaneContext" prefHeight="414.0" prefWidth="310.0" style="-fx-background-color: #67e6dc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyItemDetailsFormController">
+    <children>
+        <Label layoutX="78.0" layoutY="22.0" text="Modify Item Form">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Separator layoutX="27.0" layoutY="47.0" prefHeight="2.0" prefWidth="251.0" />
+        <TextField fx:id="txtItemCode" layoutX="78.0" layoutY="81.0" onAction="#selectAllDataOnAction" promptText="Item Code" />
+        <TextField fx:id="txtDescription" layoutX="78.0" layoutY="128.0" promptText="Description" />
+        <TextField fx:id="txtPackSize" layoutX="78.0" layoutY="175.0" promptText="Pack Size" />
+        <TextField fx:id="txtUnitPrice" layoutX="78.0" layoutY="224.0" promptText="Unit Price" />
+        <TextField fx:id="txtQtyOnHand" layoutX="78.0" layoutY="272.0" promptText="qty On Hand" />
+        <JFXButton buttonType="RAISED" layoutX="102.0" layoutY="331.0" onAction="#updateItemOnAction" style="-fx-background-color: #2c3e50;" text="Modify Item" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</AnchorPane>

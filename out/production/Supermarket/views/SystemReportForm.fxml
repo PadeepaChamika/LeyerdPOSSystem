@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="513.0" prefWidth="1015.0" style="-fx-background-color: #67e6dc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemReportFormController">
+    <children>
+        <Label layoutX="374.0" layoutY="3.0" text="System Reports" textFill="#2c3e50">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="14.0" layoutY="63.0" prefHeight="199.0" prefWidth="159.0" style="-fx-background-color: white;">
+            <children>
+                <JFXComboBox fx:id="cmbSlectDate" labelFloat="true" layoutX="13.0" layoutY="65.0" prefHeight="25.0" prefWidth="131.0" promptText="Select Date" />
+                <Label layoutX="24.0" layoutY="14.0" text="Daily Income" textFill="#596275" underline="true">
+                    <font>
+                        <Font name="Corbel Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtDailyIncome" layoutX="14.0" layoutY="113.0" prefHeight="31.0" prefWidth="131.0" promptText="Rs.Income" style="-fx-background-color: silver;">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+            <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="156.0" onMouseClicked="#printDailyIncome" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #009432; -fx-background-radius: 50;" text="Print" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="181.0" layoutY="63.0" prefHeight="199.0" prefWidth="159.0" style="-fx-background-color: white;">
+            <children>
+                <JFXComboBox fx:id="cmbMonth" labelFloat="true" layoutX="13.0" layoutY="61.0" prefHeight="25.0" prefWidth="131.0" promptText="Select Month" />
+                <Label layoutX="13.0" layoutY="14.0" prefHeight="31.0" prefWidth="139.0" text="Monthly Income" textFill="#596275" underline="true">
+                    <font>
+                        <Font name="Corbel Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtMonthIncome" layoutX="14.0" layoutY="113.0" prefHeight="38.0" prefWidth="131.0" promptText="Rs.Income" style="-fx-background-color: silver;">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+            <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="154.0" onMouseClicked="#printMonthlyIncome" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #009432; -fx-background-radius: 50;" text="Print" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="346.0" layoutY="63.0" prefHeight="199.0" prefWidth="159.0" style="-fx-background-color: white;">
+            <children>
+                <JFXComboBox fx:id="cmbYear" labelFloat="true" layoutX="13.0" layoutY="61.0" prefHeight="25.0" prefWidth="131.0" promptText="Select Year" />
+                <Label layoutX="25.0" layoutY="14.0" text="Yearly Income" textFill="#596275" underline="true">
+                    <font>
+                        <Font name="Corbel Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtYearIncome" layoutX="14.0" layoutY="113.0" prefHeight="38.0" prefWidth="131.0" promptText="Rs.Income" style="-fx-background-color: silver;">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+            <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="154.0" onMouseClicked="#printYearlyIncome" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #009432; -fx-background-radius: 50;" text="Print" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="717.0" layoutY="137.0" prefHeight="255.0" prefWidth="251.0" style="-fx-background-color: white;">
+            <children>
+                <Label layoutX="39.0" layoutY="36.0" text="Movable Item" textFill="#596275" underline="true">
+                    <font>
+                        <Font name="Corbel Bold Italic" size="30.0" />
+                    </font>
+                </Label>
+            <JFXComboBox fx:id="cmbItem" layoutX="28.0" layoutY="93.0" prefHeight="36.0" prefWidth="196.0" />
+            <TextField fx:id="txtItemSelect" layoutX="28.0" layoutY="167.0" prefHeight="53.0" prefWidth="202.0" />
+            </children>
+      </AnchorPane>
+        <AnchorPane layoutX="513.0" layoutY="63.0" prefHeight="199.0" prefWidth="159.0" style="-fx-background-color: white;">
+            <children>
+                <JFXComboBox fx:id="cmbCustomerIds" labelFloat="true" layoutX="18.0" layoutY="61.0" prefHeight="25.0" prefWidth="131.0" promptText="select Customer Id" />
+                <Label layoutX="14.0" layoutY="14.0" text="Customer Wise" textFill="#596275" underline="true">
+                    <font>
+                        <Font name="Corbel Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtCustomerIncome" layoutX="17.0" layoutY="113.0" prefHeight="38.0" prefWidth="131.0" promptText="Rs.Income" style="-fx-background-color: silver;">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+            <Label layoutX="50.0" layoutY="37.0" text=" Income" textFill="#596275" underline="true">
+               <font>
+                  <Font name="Corbel Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="154.0" onMouseClicked="#printCustomerWiseIncome" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #009432; -fx-background-radius: 50;" text="Print" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            </children>
+        </AnchorPane>
+      <Separator layoutX="126.0" layoutY="26.0" prefHeight="3.0" prefWidth="235.0" />
+      <Separator layoutX="614.0" layoutY="24.0" prefHeight="3.0" prefWidth="235.0" />
+      <TableView fx:id="tblIncomeReport" layoutX="13.0" layoutY="272.0" prefHeight="228.0" prefWidth="666.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="111.0" text="Order Id" />
+          <TableColumn fx:id="colItemCode" prefWidth="115.0" text="Item Code" />
+            <TableColumn fx:id="colOrderQty" prefWidth="133.0" text="Order Qty" />
+            <TableColumn fx:id="colCustomerId" prefWidth="149.0" text="Cusomer Id" />
+            <TableColumn fx:id="colTotal" prefWidth="157.0" text="Total" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

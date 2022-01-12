@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="RegisterNewItemAnchorPaneContext" prefHeight="437.0" prefWidth="488.0" style="-fx-background-color: white;" stylesheets="@../assets/style/StyleForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterNewItemFormController">
+   <children>
+      <Label layoutX="126.0" layoutY="14.0" text="Register New Item Form" textFill="#1e78a4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="104.0" layoutY="40.0" prefHeight="2.0" prefWidth="251.0" />
+      <JFXButton buttonType="RAISED" layoutX="199.0" layoutY="377.0" onAction="#saveItemOnAction" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #2c3e50;" text="Save Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <VBox layoutX="18.0" layoutY="66.0" onKeyReleased="#OnActionOne" prefHeight="154.0" prefWidth="458.0">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtItemCode" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="413.0" promptText="I-001" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Item Code" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="38.0" prefWidth="510.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtDescription" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="413.0" promptText="Description" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Description" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtPackSize" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="413.0" promptText="0000" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Pack Size" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="220.0" onKeyReleased="#onActionTwo" prefHeight="132.0" prefWidth="444.0">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtUnitPrice" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="444.0" promptText="0000.00" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Unit Price" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtQty" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="421.0" promptText="00" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="QtyOnHand" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="574.0" prefWidth="1082.0" style="-fx-background-color: #18dcff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierHomePageController">
+   <children>
+      <ImageView fitHeight="574.0" fitWidth="1082.0" opacity="0.6" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/grocery-store-color-illustration-variety-foods-goods-shelves-shop-trolley-cart-with-veggies-fruits-inside-supermarket-cartoon-interior-with-decor-background_151150-2381.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="350.0" layoutY="14.0" prefWidth="414.0" text="Cashier Home Page" textFill="#0d0101" underline="true">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="42.0" />
+         </font></Label>
+      <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="503.0" onAction="#backToDashBoardForm" prefHeight="36.0" prefWidth="79.0" style="-fx-background-color: #636e72;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="272.0" layoutY="319.0" onAction="#openAddNewCustomer" prefHeight="50.0" prefWidth="212.0" style="-fx-background-color: #55efc4;" text="Add New Customer Details">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="718.0" layoutY="325.0" onAction="#openMakePaymentForm" prefHeight="44.0" prefWidth="212.0" style="-fx-background-color: #55efc4;" text="Make Payment">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="191.0" fitWidth="237.0" layoutX="282.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/add-user-icon-13.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="191.0" fitWidth="191.0" layoutX="728.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/online-payment-icon-16.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
